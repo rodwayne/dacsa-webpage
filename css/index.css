@@ -1,5 +1,7 @@
 :root {
   --main: #c32227;
+  --secondary: #1e1e1e;
+  /* --main: #8b0000; */
 }
 
 * {
@@ -10,11 +12,42 @@
 }
 
 header {
+  /* display: flex;
+  justify-content: space-between; */
+  /* padding: 0 120px; */
+  background-color: var(--main);
+}
+
+.contact-header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--main);
-  padding: 0 120px;
+  background-color: var(--secondary);
+  padding: 10px 60px;
+}
+
+.contact-header > .link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-header > .link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.contact-header > .link:hover {
+  color: var(--main);
+}
+
+.link > .icon {
+  margin-right: 4px;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
   height: 60px;
+  padding: 0 120px;
 }
 
 .logo {
@@ -30,22 +63,27 @@ header {
   /* height: 40px; */
 }
 
+nav {
+  display: flex;
+}
+
 .menu {
   display: flex;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .menu-item {
   display: flex;
   align-items: center;
-  height: 70%;
+  /* height: 70%; */
   color: white;
   font-weight: bold;
   font-size: 1rem;
   list-style: none;
   margin-left: 1rem;
-  padding: 0 5px;
+  padding: 10px 5px;
+  /* padding: 0.8rem 0.5rem; */
   cursor: pointer;
   border-radius: 5px;
 }
@@ -55,4 +93,46 @@ header {
   color: var(--main);
   transition: all ease-in 0.1s;
   /* color: black; */
+}
+
+@media only screen and (max-width: 1050px) {
+  .contact-header > .link {
+    max-width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  .contact-header {
+    display: none;
+  }
+
+  .navbar-wrapper {
+    padding: 0 60px;
+  }
+
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 1rem;
+    inset: 0 0 0 50%;
+    padding: min(30vh, 10rem) 2em;
+    /* background-color: hsla(0, 0%, 100%, 0.7); */
+    background-color: var(--secondary);
+  }
+
+  .menu-item {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    transition: all ease-in 0.1s;
+  }
+
+  .menu-item:hover {
+    font-size: 2rem;
+    background-color: inherit;
+  }
 }
