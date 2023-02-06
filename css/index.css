@@ -63,6 +63,10 @@ header {
   /* height: 40px; */
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
 nav {
   display: flex;
 }
@@ -111,6 +115,24 @@ nav {
 
   .navbar-wrapper {
     padding: 0 60px;
+    z-index: 1000;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 1rem;
+    right: 60px;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .mobile-nav-toggle > .mobile-icon {
+    font-size: 2rem;
+    color: white;
   }
 
   .menu {
@@ -122,6 +144,12 @@ nav {
     padding: min(30vh, 10rem) 2em;
     /* background-color: hsla(0, 0%, 100%, 0.7); */
     background-color: var(--secondary);
+    transform: translateX(100%);
+    transition: transform 0.2s ease-out;
+  }
+
+  .menu[data-visible="true"] {
+    transform: translateX(0%);
   }
 
   .menu-item {
