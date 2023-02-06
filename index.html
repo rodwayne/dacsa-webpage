@@ -8,9 +8,11 @@
       src="https://kit.fontawesome.com/a3fff9fff8.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/nav.js" defer></script>
   </head>
   <body>
-    <header> <!-- Header -->
+    <header>
+      <!-- Header -->
       <div class="contact-header">
         <a class="link" href="tel:52-868-812-5567"
           ><i class="fa-solid fa-phone icon"></i>868 812 5567</a
@@ -29,8 +31,16 @@
           <img class="logo-img" src="./img/dac-blanco.svg" alt="Logo de DAC" />
         </div>
 
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars mobile-icon"></i>
+        </button>
+
         <nav>
-          <ul class="menu">
+          <ul id="menu" class="menu" data-visible="false">
             <li class="menu-item">Inicio</li>
             <li class="menu-item">Servicios</li>
             <li class="menu-item">Nosotros</li>
