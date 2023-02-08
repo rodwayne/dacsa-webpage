@@ -90,6 +90,17 @@ nav {
   transition: all ease-in 0.1s;
 }
 
+/* Working on desktop hero section */
+.hero {
+  background-image: url("../img/casa-moderna.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: calc(100vh - 98px);
+}
+/* End of hero section */
+
 @media only screen and (max-width: 1050px) {
   .contact-header > .link {
     max-width: 250px;
