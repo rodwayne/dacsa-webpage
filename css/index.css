@@ -92,12 +92,67 @@ nav {
 
 /* Working on desktop hero section */
 .hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   background-image: url("../img/casa-moderna.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  /* background-size: 1400px 100%; */
   background-size: cover;
   width: auto;
   height: calc(100vh - 98px);
+  padding: 0 120px;
+}
+
+.hero-cta {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: hsl(0, 0%, 100%, 0.7);
+  /* background-color: hsl(0, 0%, 12%, 0.9); */
+  /* color: white; */
+  color: var(--secondary);
+  height: fit-content;
+  width: 850px;
+  /* position: relative; */
+  /* top: 100px; */
+  padding: 30px;
+  /* border-radius: 10px; */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 > span {
+  color: var(--main);
+}
+
+h2 {
+  font-size: 2;
+  margin-bottom: 1rem;
+}
+
+.hero-cta-button {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-cta-button > button {
+  font-size: 1rem;
+  font-weight: bold;
+  /* width: 300px; */
+  padding: 20px 50px;
+  border: none;
+  background-color: var(--main);
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.hero-cta-button > button:hover {
+  box-shadow: 0.5rem 0.4rem var(--secondary);
 }
 /* End of hero section */
 
