@@ -98,7 +98,6 @@ nav {
   background-image: url("../img/casa-moderna.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: 1400px 100%; */
   background-size: cover;
   width: auto;
   height: calc(100vh - 98px);
@@ -108,16 +107,13 @@ nav {
 .hero-cta {
   /* display: flex;
   flex-direction: column; */
-  /* background-color: hsl(0, 0%, 100%, 0.7); */
-  background-color: white;
+  background-color: hsl(0, 0%, 100%, 0.8);
+  /* background-color: white; */
   /* color: white; */
   color: var(--secondary);
   height: fit-content;
   max-width: 850px;
-  /* position: relative; */
-  /* top: 100px; */
   padding: 30px;
-  /* border-radius: 10px; */
 }
 
 h1 {
@@ -131,20 +127,26 @@ h1 > span {
 
 h2 {
   font-size: 2;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.hero-cta-buttons {
+  display: flex;
+  justify-content: space-around;
 }
 
 .hero-cta-quote-btn {
   font-size: 1rem;
   font-weight: bold;
-  /* width: 300px; */
-  padding: 20px 50px;
+  padding: 20px 0;
+  width: 45%;
   border: none;
   background-color: var(--main);
   color: white;
   cursor: pointer;
   margin-right: 1rem;
   transition: box-shadow 0.5s ease-out;
+  margin-top: 1rem;
 }
 
 .hero-cta-quote-btn:hover {
@@ -154,13 +156,14 @@ h2 {
 .hero-cta-know-btn {
   font-size: 1rem;
   font-weight: bold;
-  /* width: 300px; */
-  padding: 20px 50px;
+  width: 45%;
+  padding: 20px 0;
   border: none;
   background-color: var(--secondary);
   color: white;
   cursor: pointer;
   transition: box-shadow 0.5s ease-out;
+  margin-top: 1rem;
 }
 
 .hero-cta-know-btn:hover {
