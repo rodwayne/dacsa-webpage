@@ -352,4 +352,8 @@ h2 {
   .about-header-logo div > img {
     width: 125px;
   }
+
+  .about-cta > button {
+    padding: 0.8rem;
+  }
 }
