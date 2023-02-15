@@ -198,9 +198,9 @@ h2 {
   text-align: center;
 }
 
-.about-description {
+/* .about-description {
   margin-bottom: 1.5rem;
-}
+} */
 
 .about-description > p {
   text-align: justify;
@@ -242,7 +242,7 @@ h2 {
 
 .services-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem 3rem;
   margin-bottom: 2rem;
@@ -404,6 +404,10 @@ h2 {
     font-size: 1.2rem;
     text-align: start;
   }
+
+  .services {
+    padding: 50px 60px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -433,5 +437,9 @@ h2 {
 
   .about-cta > button {
     padding: 0.8rem;
+  }
+
+  .services {
+    padding: 50px 30px;
   }
 }
