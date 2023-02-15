@@ -202,9 +202,33 @@ h2 {
   text-align: center;
 }
 
+.about-description {
+  margin-bottom: 1.5rem;
+}
+
 .about-description > p {
   text-align: justify;
   font-size: 1.5rem;
+}
+
+.about-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.about-cta > button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  background-color: var(--main);
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.about-cta > button:hover {
+  box-shadow: 0.5rem 0.4rem var(--secondary);
 }
 
 @media only screen and (max-width: 1050px) {
@@ -290,7 +314,7 @@ h2 {
     padding: 60px;
   }
 
-  .about-header-logo div > img { 
+  .about-header-logo div > img {
     width: 150px;
   }
 
@@ -325,7 +349,7 @@ h2 {
     padding: 30px;
   }
 
-  .about-header-logo div > img { 
+  .about-header-logo div > img {
     width: 125px;
   }
 }
