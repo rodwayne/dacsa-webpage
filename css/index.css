@@ -227,7 +227,6 @@ h2 {
   box-shadow: 0.5rem 0.4rem var(--secondary);
 }
 
-/* Working section */
 .services {
   padding: 50px 120px;
   background-color: var(--main);
@@ -307,7 +306,33 @@ h2 {
 .services-cta > button:hover {
   box-shadow: 0.5rem 0.4rem white;
 }
-/* end of working section */
+
+.contact {
+  padding: 50px 120px;
+}
+
+.contact > h2 {
+  font-size: 2rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+fieldset {
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+/* fieldset > select {
+
+} */
+
+/* fieldset legend {
+  font-size: ;
+} */
 
 @media only screen and (max-width: 1050px) {
   .contact-header > .link {
