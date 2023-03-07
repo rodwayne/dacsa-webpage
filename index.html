@@ -130,40 +130,53 @@
 
     <!-- Working section -->
     <div class="contact">
-      <h2>Contáctanos</h2>
-      <p>
-        ¡Ponte en contácto con nosotros! Estaremos encantados de responder a tu
-        solicitud y aclarar dudas.
-      </p>
-      <form action="">
-        <fieldset>
-          <legend>¿Qué servicio te interesa?</legend>
-          <select type="text">
-            <option value="construccion">Construcción</option>
-            <option value="arquitectura">Arquitectura</option>
-            <option value="avaluos">Avalúo inmobiliario</option>
-            <option value="dictamen">Dictamen estructural</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <legend>Tu información de contacto</legend>
-          <input type="text" placeholder="Nombre" />
-          <input type="text" placeholder="Apellido" />
-          <input type="email" placeholder="Correo electrónico" />
-          <input type="tel" placeholder="Número de teléfono" />
-        </fieldset>
-        <fieldset>
-          <legend>Asunto</legend>
-          <input type="text" placeholder="Motivo de tu mensaje..." />
-        </fieldset>
-        <fieldset>
-          <legend>Mensaje</legend>
-          <textarea rows="8" placeholder="Escribe tu mensaje aquí"></textarea>
-        </fieldset>
-        <div class="form-button">
-          <button type="button">Enviar</button>
+      <div>
+        <h2>Contáctanos</h2>
+        <p>
+          ¡Ponte en contácto con nosotros! Estaremos encantados de responder a
+          tu solicitud y aclarar dudas.
+        </p>
+      </div>
+      <div class="form-and-map">
+        <div class="form-wrapper">
+          <form action="">
+            <fieldset>
+              <legend>Asunto</legend>
+              <input type="text" placeholder="Motivo de tu mensaje" />
+            </fieldset>
+            <fieldset>
+              <legend>Tu información de contacto</legend>
+              <div class="form-row1">
+                <input type="text" placeholder="Nombre(s)" />
+                <input type="text" placeholder="Apellido" />
+              </div>
+              <div class="form-row2">
+                <input type="email" placeholder="Correo electrónico" />
+                <input type="tel" placeholder="Número de teléfono" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Mensaje</legend>
+              <textarea
+                rows="8"
+                placeholder="Escribe tu mensaje aquí"
+              ></textarea>
+            </fieldset>
+            <div class="form-button">
+              <button type="button">Enviar</button>
+            </div>
+          </form>
         </div>
-      </form>
+        <!-- <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.2150862766775!2d-97.52821027504022!3d25.862397458271218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866feb4c5b0109ef%3A0x56f31e14abababa9!2sDise%C3%B1o%20Administraci%C3%B3n%20Construcci%C3%B3n%20S.A%20de%20C.V.!5e0!3m2!1ses-419!2smx!4v1677633611367!5m2!1ses-419!2smx"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div> -->
+      </div>
     </div>
     <!-- End of working section -->
   </body>

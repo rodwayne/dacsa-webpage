@@ -315,7 +315,17 @@ h2 {
   font-size: 2rem;
 }
 
-form {
+.form-and-map {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+  max-width: 350px;
+  width: 100%;
+  /* flex-grow: 5; */
+  padding: 1rem;
   margin-top: 1rem;
 }
 
@@ -324,15 +334,70 @@ fieldset {
   margin-bottom: 1rem;
 }
 
+fieldset > textarea {
+  width: 100%;
+  padding: 0.8rem;
+}
 
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-/* fieldset > select {
+fieldset > input {
+  padding: 0.8rem;
+  width: 100%;
+}
 
-} */
+.form-row1 {
+  margin-bottom: 0.5rem;
+}
 
-/* fieldset legend {
-  font-size: ;
-} */
+.form-row1,
+.form-row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row1 > input {
+  width: 49%;
+  padding: 0.8rem;
+}
+
+.form-row2 > input {
+  width: 49%;
+  padding: 0.8rem;
+}
+
+.form-button > button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  background-color: var(--main);
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.form-button > button:hover {
+  box-shadow: 0.5rem 0.4rem var(--secondary);
+}
+
+.map-wrapper {
+  /* background-color: var(--main); */
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.map-wrapper > iframe {
+  width: 70%;
+  height: 100%;
+}
 
 @media only screen and (max-width: 1050px) {
   .contact-header > .link {
@@ -431,6 +496,10 @@ fieldset {
   }
 
   .services {
+    padding: 50px 60px;
+  }
+
+  .contact {
     padding: 50px 60px;
   }
 }
