@@ -315,14 +315,14 @@ h2 {
   font-size: 2rem;
 }
 
-.form-and-map {
+.form-and-contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .form-wrapper {
-  max-width: 350px;
+  max-width: 500px;
   width: 100%;
   /* flex-grow: 5; */
   padding: 1rem;
@@ -384,20 +384,37 @@ fieldset > input {
   box-shadow: 0.5rem 0.4rem var(--secondary);
 }
 
-.map-wrapper {
-  /* background-color: var(--main); */
-  /* width: 100%; */
-  display: flex;
-  justify-content: center;
-  flex-grow: 2;
-  padding: 1rem;
+.contact-info-wrapper {
   margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--main);
+  min-width: 290px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
 }
 
-.map-wrapper > iframe {
-  width: 70%;
-  height: 100%;
+.contact-info-wrapper > iframe {
+  width: 100%;
+  height: 65%;
+  margin-bottom: 1rem;
 }
+
+.contact-info-wrapper > a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.contact-info-wrapper > a > i {
+  margin-right: 0.5rem;
+}
+
+.contact-info-wrapper > a:hover {
+  color: var(--main);
+}
+
 
 @media only screen and (max-width: 1050px) {
   .contact-header > .link {
