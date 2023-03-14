@@ -400,19 +400,23 @@ fieldset > input {
   margin-bottom: 1rem;
 }
 
-.contact-info-wrapper > a {
-  display: block;
+.contact-info-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-info-links a {
   color: white;
   text-decoration: none;
-  margin-bottom: 1rem;
 }
 
-.contact-info-wrapper > a > i {
+.contact-info-links a:hover {
+  color: var(--secondary);
+}
+
+.contact-info-links .icon {
   margin-right: 0.5rem;
-}
-
-.contact-info-wrapper > a:hover {
-  color: var(--main);
 }
 
 
