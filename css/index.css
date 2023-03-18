@@ -424,6 +424,28 @@ fieldset > input {
   margin-right: 0.5rem;
 }
 
+.footer {
+  padding: 20px 120px;
+  background-color: var(--tertiary);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.footer-logo-img {
+  width: auto;
+  height: 20px;
+}
+
+.footer-logo > p {
+  height: 100%;
+  color: white;
+  /* height: 100%; */
+}
+
 @media only screen and (max-width: 940px) {
   .form-and-contact {
     flex-wrap: wrap;
@@ -538,6 +560,10 @@ fieldset > input {
   .contact {
     padding: 50px 60px;
   }
+
+  .footer {
+    padding: 20px 60px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -571,5 +597,9 @@ fieldset > input {
 
   .services {
     padding: 50px 30px;
+  }
+  
+  .footer {
+    padding: 20px 30px;
   }
 }
