@@ -13,6 +13,9 @@
 
 header {
   background-color: var(--main);
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .contact-header {
@@ -598,7 +601,7 @@ fieldset > input {
   .services {
     padding: 50px 30px;
   }
-  
+
   .footer {
     padding: 20px 30px;
   }
