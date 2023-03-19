@@ -141,17 +141,37 @@
           <form action="">
             <fieldset>
               <legend>Asunto</legend>
-              <input type="text" placeholder="Motivo de tu mensaje" />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Motivo de tu mensaje"
+                required
+              />
             </fieldset>
             <fieldset>
               <legend>Tu información de contacto</legend>
               <div class="form-row1">
-                <input type="text" placeholder="Nombre(s)" />
-                <input type="text" placeholder="Apellido" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nombre(s)"
+                  required
+                />
+                <input type="text" placeholder="Apellido" required />
               </div>
               <div class="form-row2">
-                <input type="email" placeholder="Correo electrónico" />
-                <input type="tel" placeholder="Número de teléfono" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Correo electrónico"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Número de teléfono"
+                  required
+                />
               </div>
             </fieldset>
             <fieldset>
@@ -159,10 +179,11 @@
               <textarea
                 rows="8"
                 placeholder="Escribe tu mensaje aquí"
+                required
               ></textarea>
             </fieldset>
             <div class="form-button">
-              <button type="button">Enviar</button>
+              <button type="submit">Enviar</button>
             </div>
           </form>
         </div>
@@ -190,7 +211,6 @@
         </div>
       </div>
     </div>
-    <!-- Start of Footer -->
     <div class="footer">
       <div class="footer-logo">
         <img
@@ -201,6 +221,5 @@
         <p>© 2023 DAC S.A. de C.V.</p>
       </div>
     </div>
-    <!-- End of working section -->
   </body>
 </html>
