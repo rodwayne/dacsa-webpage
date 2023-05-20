@@ -254,7 +254,7 @@ h2 {
   border-radius: 10px;
   text-align: center;
   background-color: white;
-  width: 200px;
+  width: 250px;
   /* width: calc(345px / 2); */
   padding: 20px;
   transition: box-shadow 0.2s ease-out;
