@@ -440,6 +440,10 @@ fieldset > input {
   color: white;
 }
 
+.footer-sign a {
+  color: white;
+}
+
 .footer-logo {
   display: flex;
   align-items: flex-end;
