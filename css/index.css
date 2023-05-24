@@ -428,8 +428,16 @@ fieldset > input {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
   padding: 20px 120px;
   background-color: var(--tertiary);
+}
+
+.footer-sign {
+  color: white;
 }
 
 .footer-logo {
@@ -565,6 +573,7 @@ fieldset > input {
   }
 
   .footer {
+    justify-content: center;
     padding: 20px 60px;
   }
 }
@@ -603,6 +612,7 @@ fieldset > input {
   }
 
   .footer {
+    justify-content: center;
     padding: 20px 30px;
   }
 }
